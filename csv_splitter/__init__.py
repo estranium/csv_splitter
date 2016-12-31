@@ -50,7 +50,6 @@ def split(origin_file, max_row, output_dir='./', got_header=0, populete_header=0
                 collected_rows = []
             row_num+=1
         if collected_rows:
-            print(collected_rows)
             file_num = row_num//max_row
             path_target = get_new_file_name(output_dir, file_num)
             write_collected_to_file(collected_rows, header, path_target)
